@@ -33,11 +33,7 @@ h2{
   font-size: 25px;
   color:lightskyblue;
 }
-h2:hover{
-  transform: scale(1.05);
-  text-shadow: 0 0 5px #a020f0aa;
-  transition: transform 0.2s ease, text-shadow 0.2s ease;
-}
+
 
 .animated-button {
   height: 150px;

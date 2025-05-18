@@ -1,6 +1,6 @@
 'use client'
 import { useRouter } from "next/navigation";
-import './globals.css'
+import './Globals.css';
 export default function Home() {
   const router=useRouter();
   const go_to_create_playlist=()=>{

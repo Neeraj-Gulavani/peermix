@@ -30,11 +30,7 @@
       color: lightskyblue;
     }
 
-    h2:hover {
-      transform: scale(1.05);
-      text-shadow: 0 0 5px #a020f0aa;
-      transition: transform 0.2s ease, text-shadow 0.2s ease;
-    }
+   
 
     .form-container {
       display: flex;
@@ -139,3 +135,71 @@
 .Input-field-text:focus {
   box-shadow: 0 0 0 .15vw skyblue;
 }
+
+.Image-input {
+  border: none;
+  display: flex;
+  padding: 0.75rem 1.5rem;
+  background-color: #488aec;
+  color: #ffffff;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  vertical-align: middle;
+  align-items: center;
+  border-radius: 0.5rem;
+  user-select: none;
+  gap: 0.75rem;
+  box-shadow:
+    0 4px 6px -1px #488aec31,
+    0 2px 4px -1px #488aec17;
+  transition: all 0.6s ease;
+}
+
+
+
+.preview{
+  width: 200px;
+  border-radius: 10px;
+  border: 2px solid purple;
+  background-color: #a020f04c;
+}
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      padding: 30px;
+      width: 250px;
+      text-align: center;
+      border: 1px solid #ffffff2e;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      color: white;
+      display: inline-block;
+      margin-left: 400px;
+    }
+
+    .preview-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .confirm-btn {
+      background-color: #2196F3;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    .confirm-btn:hover {
+      background-color: #1976D2;
+    }
