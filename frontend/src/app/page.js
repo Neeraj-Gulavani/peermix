@@ -1,4 +1,11 @@
+'use client'
+import { useRouter } from "next/navigation";
+import './globals.css'
 export default function Home() {
+  const router=useRouter();
+  const go_to_create_playlist=()=>{
+    router.push('/create-playlist');
+  }
   return (
     <>
     <div className="container">
@@ -9,7 +16,7 @@ export default function Home() {
     <div className="Title">
       <h1>PEERMIX</h1>
       <h2>Create Playlists for friends with friends</h2>
-      <button className="animated-button">
+      <button className="animated-button" onClick={go_to_create_playlist}>
         <span>
           Create Playlist +
         </span>
