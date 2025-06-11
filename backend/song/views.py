@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from googleapiclient.discovery import build
-
+from rest_framework import viewsets
+from .models import Song, Playlist, Member
+from .serializers import SongSerializer, MemberSerializer, PlaylistSerializer
 apikey = ""
 
 def fetchsong(url):
@@ -26,3 +28,15 @@ def fetchsong(url):
 
 
 # Create your views here.
+
+class PLaylistViewSet(viewsets.ModelViewSet):
+    queryset = Playlist.objects.all()
+    serializer_class = PlaylistSerializer
+
+class SongViewSet(viewsets.ModelViewSet):
+    queryset = Song.objects.all()
+    serializer_class = SongSerializer
+
+class MemberViewSet(viewsets.ModelViewSet):
+    queryset = Member.objects.all()
+    serializer_class = MemberSerializer
