@@ -1,0 +1,29 @@
+.wrapper {
+    min-height: 100vh;
+    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #58321c;
+}
+
+.play-button {
+  position: absolute;
+  top: 62.5%; 
+  left: 57%;  
+  transform: translate(-50%, -50%);
+  width: 70px;  
+  height: 94px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+  
+  box-shadow: 4px 4px 4px #000000aa;
+}
+
+
+.play-button:active {
+  transform: translate(-50%, -48%) scale(0.92); 
+  box-shadow: 0 2px 0 #00000055; 
+}
